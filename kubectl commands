@@ -1,0 +1,6 @@
+ls ~/.kube/config
+kubectl config current-context
+aws eks list-clusters
+aws eks update-kubeconfig --name eks-dev
+kubectl apply -f postgres-pod.yaml
+kubectl get pods

@@ -1,0 +1,8 @@
+u go to ur IAM user
+security credentials
+create access key
+aws --profile 312 sts get-caller-identity
+
+
+to switch profile
+aws --profile 312 sts assume-role --role-arn arn:aws:iam::401413892014:role/DevopsAccessRole2020B --role-session-name kube-class

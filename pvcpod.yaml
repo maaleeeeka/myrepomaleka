@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypvcpod-maleka
+spec:
+  containers:
+    - name: myfrontend-maleka
+      image: alpine:latest
+      command: ["/bin/sh"]
+      args: ["-c","hostname >> /opt/myhostnames && sleep 60"]
+      volumeMounts:
+      - mountPath: "/opt"
+        name: mypd
+  volumes:
+    - name: mypd
+      persistentVolumeClaim:
+        claimName: myclaim-maleka

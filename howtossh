@@ -1,0 +1,1 @@
+ssh -i /Users/xxx01/Desktop/MyMacKey.pem  ec2-user@54.91.0.15
